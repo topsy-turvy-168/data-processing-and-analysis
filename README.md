@@ -86,7 +86,7 @@ Tools:
 
 Steps:
 
-1. Design Database Schema:
+1. Design Database Schema: use the file database_schema.sql
 
 2. Load Data into Database:
 
