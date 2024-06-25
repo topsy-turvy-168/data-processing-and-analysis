@@ -66,9 +66,9 @@ Steps:
 
 2. Configure dbt_project.yml
 
-3. Set Up the dbt Profile: use the directory .dbt/profiles.yml 
+3. Set Up the dbt Profile: in the directory .dbt/, use the file profiles.yml 
 
-4. Create dbt Models: use the directory models/cleaned_data.sql
+4. Create dbt Models: in the directory models/, use the file cleaned_data.sql
 
 5. Run dbt to Process Data:
 - dbt run
