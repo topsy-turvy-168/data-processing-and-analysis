@@ -95,6 +95,7 @@ After running dbt, the transformed data will be loaded into the cleaned_data tab
 You can verify that the data has been loaded correctly by querying the PostgreSQL database. Here’s an example using psql or any SQL client:
 
 Sample Verification Query:
+
 SELECT * 
 
 FROM cleaned_data 
