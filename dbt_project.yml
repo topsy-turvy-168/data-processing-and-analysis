@@ -1,0 +1,26 @@
+name: 'covid19_analysis'
+version: '1.0'
+config-version: 2
+
+# Define where your models and data lives
+model-paths: ["models"]
+source-paths: ["sources"]
+
+# Define the default database and schema
+profile: 'covid19_profile'
+
+# Variables you want to reference across your project
+vars:
+  covid19_data: 'covid19_daily_reports'
+
+# Define source schema for the raw data
+sources:
+  - name: 'covid19_source'
+    database: 'covid19'
+    schema: 'public'
+    tables:
+      - name: 'daily_reports'
+
+models:
+  covid19_analysis:
+    materialized: 'table'  # Specify that models should be materialized as tables
