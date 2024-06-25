@@ -57,7 +57,7 @@ import os
 import pandas as pd
 from sqlalchemy import create_engine
 
-# Database configuration
+## Database configuration
 DB_TYPE = 'postgresql'
 DB_DRIVER = 'psycopg2'
 DB_USER = 'your_user'
@@ -69,7 +69,7 @@ DB_NAME = 'covid19'
 DATABASE_URI = f"{DB_TYPE}+{DB_DRIVER}://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 engine = create_engine(DATABASE_URI)
 
-# Directory containing CSV files
+## Directory containing CSV files
 data_dir = "/app/COVID-19/csse_covid_19_data/csse_covid_19_daily_reports"
 
 for file in os.listdir(data_dir):
@@ -122,14 +122,14 @@ name: 'covid19_analysis'
 version: '1.0'
 config-version: 2
 
-# Define where your models and data lives
+## Define where your models and data lives
 model-paths: ["models"]
 source-paths: ["sources"]
 
-# Define the default database and schema
+## Define the default database and schema
 profile: 'covid19_profile'
 
-# Define source schema for the raw data
+## Define source schema for the raw data
 sources:
   - name: 'covid19_source'
     database: 'covid19'
@@ -233,7 +233,7 @@ Sample Output:
 | Lombardia      | Italy         | 2020-03-22       | 5000      | 300    | 400       | 4300   |
 | Hubei          | China         | 2020-03-22       | 50000     | 3200   | 45000     | 1800   |
 
-Explanation:
+## Explanation:
 This output shows that the data has been successfully loaded into the cleaned_data table, displaying the first five rows with key fields like province, country, last_update_date, confirmed, deaths, recovered, and active.
 
 
@@ -265,7 +265,8 @@ Output:
 | Brazil       | 8500      |
 | Russia       | 7800      |
 | France       | 7600      |
-Explanation:
+
+## Explanation:
 The query counts the number of records for each country and lists the top 5 countries with the most records.
 
 2. How does the total number of confirmed cases change over time?
@@ -287,7 +288,8 @@ Output:
 | 2020-01-26 | 2118            |
 | ...        | ...             |
 | 2021-12-31 | 28764531        |
-Explanation:
+
+## Explanation:
 This output shows how the total number of confirmed cases has increased over time from the beginning of the pandemic to the end of 2021.
 
 3. Is there a correlation between confirmed cases and deaths?
@@ -297,7 +299,7 @@ Python Script for Correlation Analysis:
 import pandas as pd
 from sqlalchemy import create_engine
 
-# Database configuration
+## Database configuration
 DB_TYPE = 'postgresql'
 DB_DRIVER = 'psycopg2'
 DB_USER = 'your_user'
