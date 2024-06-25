@@ -89,9 +89,11 @@ Steps:
 1. Design Database Schema:
 
 2. Load Data into Database:
+
 After running dbt, the transformed data will be loaded into the cleaned_data table.
 
 3. Verify Data Load:
+
 You can verify that the data has been loaded correctly by querying the PostgreSQL database. Here’s an example using psql or any SQL client:
 
 Sample Verification Query:
@@ -128,6 +130,7 @@ Tools:
 - Pandas
 
 Questions and Queries:
+
 1. What are the top 5 most common countries and their frequency?
 
 SQL Query: use the file 1-top_5_most_common_values.sql
