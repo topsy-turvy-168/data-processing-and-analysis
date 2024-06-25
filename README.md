@@ -30,20 +30,20 @@ git clone https://github.com/CSSEGISandData/COVID-19.git
 cd COVID-19/csse_covid_19_data/csse_covid_19_daily_reports
 
 2. Create a Dockerfile for Data Ingestion:
-# Use the official Python image
+## Use the official Python image
 FROM python:3.9
 
-# Set the working directory
+## Set the working directory
 WORKDIR /app
 
-# Install Python dependencies
+## Install Python dependencies
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-# Copy the project files
+## Copy the project files
 COPY . .
 
-# Set the command to run the application
+## Set the command to run the application
 CMD ["python", "ingest_data.py"]
 
 3. Define requirements.txt:
