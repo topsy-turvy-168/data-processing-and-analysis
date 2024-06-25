@@ -145,8 +145,9 @@ Output:
 | Russia       | 7800      |
 | France       | 7600      |
 
-## Explanation:
+### Explanation:
 The query counts the number of records for each country and lists the top 5 countries with the most records.
+
 
 2. How does the total number of confirmed cases change over time?
 
@@ -167,6 +168,7 @@ Output:
 ### Explanation:
 This output shows how the total number of confirmed cases has increased over time from the beginning of the pandemic to the end of 2021.
 
+
 3. Is there a correlation between confirmed cases and deaths?
 
 Python Script for Correlation Analysis: use the file 3-correlation_analysis.py
@@ -179,6 +181,7 @@ Output:
 
 ### Explanation:
 The correlation coefficient of 0.87 indicates a strong positive correlation between confirmed cases and deaths, meaning that as the number of confirmed cases increases, the number of deaths also tends to increase.
+
 
 V. Orchestration:
 
